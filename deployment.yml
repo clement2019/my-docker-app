@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-docker-app-deployment
+  labels:
+    app: my-docker-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-docker-app
+  template:
+    metadata:
+      labels:
+        app: my-docker-app
+    spec:
+      containers:
+      - name: nodeserver
+        image: good777lord/my-docker-app
+        ports:
+        - containerPort: 3000
