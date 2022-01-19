@@ -25,6 +25,6 @@ i created the deployment.yml file for my deployment object for my kubernetes clu
 # Creating the service for the application 
 I needed to be able to access the application at port:3000 inside the container so i need to create a service of type:LoadBalancer that will allow the application to be accessble as the targetport:3000 which is the ame as the host port.For internal comnuincation between the pods the service type:clusterip .However in the case i had to create the service.yml file as shown in my repo
 $ kubectl apply -f service.yml
- $ kubectl get svc
-  $ kubectl describe service my-docker-app-service
- $ kubectl get svc
+$ kubectl get svc
+$ kubectl describe service my-docker-app-service
+$ kubectl get svc

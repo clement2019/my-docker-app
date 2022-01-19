@@ -23,5 +23,5 @@ app.get('/products',(req,res)=>{
     ])    
 })
 app.listen(port, ()=> {
-console.log('Docker application is up and listening to port: 3000');
+console.log('Docker application is up and listening to port: ${port}');
 })
