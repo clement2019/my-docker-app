@@ -2,7 +2,7 @@ const express= require('express');
 const app= express();
 const port =3000;
 app.get('/',(req, res)=>{
-    res.send('<h1>This is an express Docker application by Ayeni</h1> <h4> Message: Success</h4> <p>version 2.0</p>');
+    res.send('<h1>This is an express Docker app by Ayeni</h1> <h4> Message: Success</h4> <p>version 2.0</p>');
 })
 
 app.get('/products',(req,res)=>{
